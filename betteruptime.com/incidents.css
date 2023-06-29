@@ -1,10 +1,30 @@
-.incident--ongoing {
-    background: #ffb3b3!important;
-}
-.incident--acknowledged {
-    background: #ffffb3!important;
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+    .incident--ongoing {
+        background: #ffb3b3!important;
+    }
+    .incident--acknowledged {
+        background: #ffffb3!important;
+    }
+    
+    .js-clickable-row.py-2 {
+        background: #ccffcc;
+    }
 }
 
-.js-clickable-row.py-2 {
-    background: #ccffcc;
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    .incident--ongoing, .incident--ongoing p {
+        background: #cc0000!important;
+        color:white!important;
+    }
+    
+    .incident--acknowledged, .incident--acknowledged p {
+    background: #e6e600!important;
+    color:black!important;
+    }
+    .js-clickable-row.py-2, .js-clickable-row.py-2 p {
+    background: #006600;
+    color:white;
+}
 }
