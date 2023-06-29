@@ -1,0 +1,10 @@
+.incident--ongoing {
+    background: #ffb3b3!important;
+}
+.incident--acknowledged {
+    background: #ffffb3!important;
+}
+
+.js-clickable-row.py-2 {
+    background: #ccffcc;
+}
