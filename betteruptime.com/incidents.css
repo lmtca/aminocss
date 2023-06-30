@@ -6,9 +6,11 @@
     .incident--acknowledged {
         background: #ffffb3!important;
     }
-    
+    .incident--resolved {
+        background: #ccffcc!important;
+    }
     .js-clickable-row.py-2 {
-        background: #ccffcc;
+        background: #cccccc;
     }
 }
 
@@ -20,11 +22,27 @@
     }
     
     .incident--acknowledged, .incident--acknowledged p {
-    background: #e6e600!important;
-    color:black!important;
+        background: #e6e600!important;
+        color:black!important;
+    }
+    .incident--resolved, .incident--resolved p {
+        background: #006600!important;
+        color:white!important;
     }
     .js-clickable-row.py-2, .js-clickable-row.py-2 p {
-    background: #006600;
-    color:white;
+        background: grey;
+        color:white;
+    }
 }
+
+/*  There currently isn't a way to target Ongoing Similar Incidents 
+    Below was my effort, unfortunately resolved similar incidents aren't tagged either.
+    Reported to betteruptime.com
+*/
+/*[href*=incident-group-started] {
+    background: #cc0000!important;
+    display:none;
 }
+tr.py-2:not(.incident--ongoing):not(.incident--acknowledged):not(.incident--resolved) {
+    background: #cc0000!important;
+}*/
